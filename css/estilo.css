@@ -1,0 +1,415 @@
+:root {
+    /* colores */
+    --blue:#0404B4;
+    --black: #282623;
+    --grey: #848484;
+    --white: #FFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* estilo principal */
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 324px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #282623 50%,#0404B4 100%);
+}
+
+/* estilo imagen logo */
+header img {
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+/* estilo del contenido */
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+/* estilo etiqueta h1 */
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+
+
+/* estilo de bonton */
+.header--title-container .header--button {
+    /* boton conoce mas  */
+      /* position:absolute es la unica que te permite mover arriba,abajo,izquierda,derecha */
+      position: absolute;
+      left: calc(50% - 118px);
+      top: 270px;
+      display: block;
+      margin-top: 35px;
+      padding: 15px;
+      width: 229px;
+      height: 48px;
+      background-color: var(--white);
+      /*Sombra*/
+      box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+      border: none;
+      border-radius: 5px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--black);
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+}
+
+/* estilos section nuemro 2 monedas comisiones  */
+.main-LOL-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+  .main-LOL-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+.main-LOL-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("../assets/FondoCopa.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.main-LOL-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.info--card_title {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color:var(--white);
+}
+.info--card_body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+  }
+
+
+  /* ----------------------------------- */
+.info-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 190px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--black);
+  }
+  
+  /* estilo de titulos ,h2  p del contenedor general */
+  .product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blue);
+  }
+  .product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+  }
+
+
+  
+/* estilo de la creacion de la tarjeta  */
+  .product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--grey);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+  }
+  /* estilo de la imagen clock */
+  .product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-image: url("../assets/usuario.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+    /* estilo de la imagen dollar */
+
+  .product-detail--card .dollar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-image: url("../assets/calendario.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+    /* estilo de la imagen check */
+
+  .product-detail--card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-image: url("../assets/trofeo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* estilos de de titulo p de los articulos  */
+
+  .product--card_title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--white);
+  }
+  /* estilo tarjeta  */
+  .product--card_body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:var(--black)
+  }
+
+  /* estilo de seccion numeri 3 imagen  */
+  .bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 70vh;
+    background-image: url("../assets/fondoCopa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+/* ------------------------------------------------ */
+
+/* estilos seccion de promociones  */
+/* estilo de h2 del contenedor general */
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.main-plans-container {
+  width: 100%;
+  min-height: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+/* estilo de h2 y p */
+
+.main-plans-container h2  {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 5rem;
+  color: var(--black);
+}
+
+.main-plans-container p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color:var(--grey);
+}
+
+/* estilo de  la tarjeta y de la barrita  */
+.plans-container--slider {
+  display: flex;
+  /* gap: 50px; Aun no está soportado por todos los navegadores :( */
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+/* estilo tarjeta  fondo  */
+.plans-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 30px 0;
+  padding: 0 15px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px hwb(60 7% 92% / 0.16);
+}
+.enlace {
+  text-decoration: none;
+}
+
+
+/* estilo de los botones tarjeta de recomendado  */
+.plans-container--card .recommended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  left: calc(50% - 60px);
+  top: -15px;
+  margin: 0;
+  padding: 6px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  color: var(--white);
+}
+/* estilo de titulos de las tarjetas  */
+.plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+.plans-container--card .plan-card--price {
+  padding: 5px 0;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: black;
+  padding-top: 35px;
+}
+.plans-container--card .plan-card--saving {
+  padding-top: 0;
+}
+
+/* estilo de los botones  */
+.plan-card--ca {
+  width: 160px;
+  height: 48px;
+  margin-top: 20px;
+  background: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+
+
+/* ultima seccion piede pagina  */
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--grey);
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+.left li {
+  margin: 10px 0;
+}
+.left a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.estilo {
+  width: 50px;
+  height: px;
+  border-radius: 30px;
+}
+
